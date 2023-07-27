@@ -1,0 +1,17 @@
+body
+{
+	background-color: #496075;
+	color: #c2f1db;
+}
+
+img{
+	margin: 10px;
+}
+
+.img-button{
+	border: #c2f1db 3px outset;
+}
+
+.img-cursor{
+	cursor: pointer;
+}

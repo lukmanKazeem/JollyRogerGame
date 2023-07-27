@@ -2,10 +2,16 @@
 <html>
 	<head>
 		<title>Testing</title>
+		<script type="text/javascript">
+			function randNum()
+			{
+				document.getElementById("ans").value = Math.floor((Math.random()*12)+1);
+			}
+		</script>
 	</head>
 
 	<body>
-		<img src="img/flag1.jpg" style="display: none"><br/>
-		<img src="img/flag2.jpg"><br/>
+		<p><input type="text" id="ans"></p>
+		<button onclick="randNum()">Click for random number</button>
 	</body>
 </html>

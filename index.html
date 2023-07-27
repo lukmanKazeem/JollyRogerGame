@@ -23,5 +23,27 @@
 			<img src="img/flag11.jpg">
 		</div>
 		<!-- stops pre-loading images -->
+		<h1 style="text-align: center;">Beware Of The Jolly Roger</h1>
+		<div style="text-align: center;">
+			<img src="img/texture.jpg" class="img-button img-cursor" id=1 onclick="boom(this.id)">
+			<img src="img/texture.jpg" class="img-button img-cursor" id=2 onclick="boom(this.id)">
+			<img src="img/texture.jpg" class="img-button img-cursor" id=3 onclick="boom(this.id)">
+			<img src="img/texture.jpg" class="img-button img-cursor" id=4 onclick="boom(this.id)"><br/>
+			<img src="img/texture.jpg" class="img-button img-cursor" id=5 onclick="boom(this.id)">
+			<img src="img/texture.jpg" class="img-button img-cursor" id=6 onclick="boom(this.id)">
+			<img src="img/texture.jpg" class="img-button img-cursor" id=7 onclick="boom(this.id)">
+			<img src="img/texture.jpg" class="img-button img-cursor" id=8 onclick="boom(this.id)"><br/>
+			<img src="img/texture.jpg" class="img-button img-cursor" id=9 onclick="boom(this.id)">
+			<img src="img/texture.jpg" class="img-button img-cursor" id=10 onclick="boom(this.id)">
+			<img src="img/texture.jpg" class="img-button img-cursor" id=11 onclick="boom(this.id)">
+			<img src="img/texture.jpg" class="img-button img-cursor" id=12 onclick="boom(this.id)">
+
+			<p id="msg" style="font-size: 30px;">Click to find 10 flags before you find the pirate's flag</p>
+			<p id="disp" style="font-size: 15px;"></p>
+		</div>
+
+		<script type="text/javascript">
+			document.getElementById("disp").innerHTML = "The Jolly Roger is in position " + randomNum;
+		</script>
 	</body>
 </html>
