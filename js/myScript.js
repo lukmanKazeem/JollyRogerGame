@@ -1,6 +1,19 @@
 var randomNum = Math.floor((Math.random()*12)+1);
 var clickCounter = parseInt(0);
 var gameActive = true;
+var flagArr = ["img/flag1.jpg", 
+			   "img/flag2.jpg",
+			   "img/flag3.jpg", 
+			   "img/flag4.jpg",
+			   "img/flag5.jpg", 
+			   "img/flag6.jpg",
+			   "img/flag7.jpg",
+			   "img/flag8.jpg",
+			   "img/flag9.jpg", 
+			   "img/flag10.jpg",
+			   "img/flag11.jpg"]
+
+var flagArrIndex = parseInt(0);
 
 function boom(btn){
 	if(gameActive)
@@ -19,7 +32,8 @@ function boom(btn){
 		else
 		{
 			clickCounter++;
-			document.getElementById(btn).src = "img/flag1.jpg";
+			document.getElementById(btn).src = flagArr[flagArrIndex];
+			flagArrIndex++;
 			document.getElementById(btn).onclick = null;
 			document.getElementById(btn).classList.remove("img-cursor");
 
